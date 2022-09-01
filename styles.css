@@ -1,0 +1,236 @@
+/*
+font-family: 'DM Serif Display', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Padauk', sans-serif;
+font-family: 'Unna', serif;
+*/
+
+
+
+.body{
+	margin: 0px;
+	background-color: rgb(20, 20, 20);
+}
+.main{
+	/*GRID*/
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-areas:
+		"header header header"
+		"article article aside"
+		"ofertas ofertas ofertas"
+		"footer footer footer";
+	grid-template-columns: 15% auto;
+	grid-template-rows: 1%;
+	
+	/* ESTILOS */
+	color: white;
+	margin: 0px;
+	margin-left: 10px;
+}
+/* NAVEGADOR */
+
+.nav {
+	grid-area: nav;
+	position: fixed;
+	background: black;
+	padding-right: 20px;
+	padding-left: 5px;
+	padding-bottom: 100%;
+	font-family: 'Merriweather', serif;
+	margin-right: 5px;
+	font-size: 20px;
+}
+.nav #logo{
+	width: 150px;
+	margin-left: 35px;
+	margin-right: -20px;
+	margin-top: 20px;
+}
+
+
+
+.nav_link a {
+	display: block;
+	text-decoration: none;
+	list-style-type: none;
+	color: white;
+	padding: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: center;
+}
+.nav_link a:hover{
+	background: rgb(14, 14, 14);
+	border-bottom: solid #5BA152;
+}
+ul{
+	padding-left: 5px;
+}
+li{
+	list-style: none;
+	padding: 10px;
+
+}
+/* HEADER */
+
+.header {
+	grid-area: header;
+	text-align: center;
+	font-size: 70px;
+	margin-left: 200px;
+	height: 220px;
+	background-image: url(imagenes/header.jpg);
+	background-attachment: fixed;
+	
+}
+h1{
+	font-family: 'DM Serif Display', serif;
+	color: #5BA152;
+	stroke: #3b6935;
+	text-shadow: 6px  6px 6px #132510;
+	display: contents;
+	background-image: url(header.jpg) initial;
+	text-shadow: 60px 60px 60px 60px rgb(255, 255, 255);
+	position: fixed;
+}
+
+
+/* CONTENIDO */
+
+.article {
+	grid-area: article;
+	margin-top: 200px;
+	margin-left: 280px;
+	margin-right: 20px;
+	text-indent: 45px;
+	font-size: 25px;
+	font-family: 'Merriweather', serif;
+	text-align: center;
+}
+.subtitle {
+	font-size: 65px;
+	margin: 30px;
+	color: #df9d23 ;
+	font-family: 'DM Serif Display', serif;
+
+}
+/* PUBLICIDAD */
+
+.aside {
+	grid-area: aside;
+	color: black;
+	margin-right:25px;
+	margin-left: 10px;
+	margin-top: 370px;
+}
+.aside img{
+	width: 150px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 120px;
+}
+
+
+/* OFERTAS */
+.ofertas{
+	grid-area: ofertas;
+	display: inline;
+	margin-left: 250px;
+}
+.card{
+	width: 315px;
+	height: 760px;
+	background-color: rgb(32, 59, 31);
+
+	color: white;
+	float: left;
+	margin: 20px;
+	border-radius: 15px;
+	text-align: center;
+	border: none;
+}
+#ofertas-title{
+	text-align: center;
+	margin-top: -50px;
+	margin-left: -100px;
+}
+.card img{
+	width: 250px;
+	border-radius: 15px;
+	margin: 28px;
+	margin-top: 30px;
+}
+.card .upper-p{
+	font-size: 70px;
+}
+.upper-p, .lower-p{
+	font-family: 'DM Serif Display', serif;
+	font-size: 34px;
+	margin-top: -30px;
+	margin-bottom: -5px;
+	color: #df9d23 ;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.card li{
+	margin-right: 10px;
+	font-family: 'DM Serif Display', serif;
+	font-size: 20px;
+}
+.card div{
+	position: relative;
+	float: bottom;
+	margin-top: 20px;
+	margin-right:  40px;
+}
+.compra{
+	background-color: transparent ;
+	border: none;
+	margin: -20px;
+};
+.compra p{
+	font-family: 'Unna', serif;
+	margin-top: -10px;
+	margin-left: 35px;
+	font-size: 70px;
+	color: #df9d23 ;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.precio{
+	float: center;
+	font-family: 'Unna', serif;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	border-radius: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 70px;
+	color: #df9d23 ;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.precio:hover{
+	color: rgb(32, 59, 31);
+	background-color: #df9d23 ;
+}
+/* FOOTER */
+
+.footer {
+	grid-area: footer;
+	padding-left: 60px;
+	margin-left: 200px;
+	margin-bottom: -30px;
+	height: 40px;
+	text-align: center;
+	color: rgb(104, 104, 104);
+}
+
+
+@media (max-weight: 600px){
+	.nav{
+		display: flex;
+		position: hidden;
+	}
+}

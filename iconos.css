@@ -1,0 +1,46 @@
+.accesos{
+	margin-left: 50px;
+}
+.icono{
+	float: left;
+	margin: 15px;
+}
+#wpp{
+    position: fixed;
+    list-style: none;
+    opacity: 1;
+}
+
+#wpp-hover{
+    position: fixed;
+    list-style: none;
+    opacity: 0;
+
+}
+#wpp:hover {
+    opacity: 0;
+}
+#wpp-hover:hover{
+    opacity: 1;
+}
+
+#carro{
+    position: fixed;
+    list-style: none;
+    opacity: 1;
+	margin-left: 70px;
+}
+
+#carro-hover{
+    position: fixed;
+    list-style: none;
+    opacity: 0;
+	margin-left: 70px;
+
+}
+#carro:hover {
+    opacity: 0;
+}
+#carro-hover:hover{
+    opacity: 1;
+}
