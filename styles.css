@@ -6,7 +6,6 @@ font-family: 'Unna', serif;
 */
 
 
-
 .body{
 	margin: 0px;
 	background-color: rgb(20, 20, 20);
@@ -23,54 +22,8 @@ font-family: 'Unna', serif;
 	grid-template-columns: 15% auto;
 	grid-template-rows: 1%;
 	
-	/* ESTILOS */
+	/* ESTILOS DE PAGINA*/
 	color: white;
-	margin: 0px;
-	margin-left: 10px;
-}
-/* NAVEGADOR */
-
-.nav {
-	grid-area: nav;
-	position: fixed;
-	background: black;
-	padding-right: 20px;
-	padding-left: 5px;
-	padding-bottom: 100%;
-	font-family: 'Merriweather', serif;
-	margin-right: 5px;
-	font-size: 20px;
-}
-.nav #logo{
-	width: 150px;
-	margin-left: 35px;
-	margin-right: -20px;
-	margin-top: 20px;
-}
-
-
-
-.nav_link a {
-	display: block;
-	text-decoration: none;
-	list-style-type: none;
-	color: white;
-	padding: 5px;
-	padding-right: 10px;
-	padding-left: 10px;
-	text-align: center;
-}
-.nav_link a:hover{
-	background: rgb(14, 14, 14);
-	border-bottom: solid #5BA152;
-}
-ul{
-	padding-left: 5px;
-}
-li{
-	list-style: none;
-	padding: 10px;
-
 }
 /* HEADER */
 
@@ -78,7 +31,7 @@ li{
 	grid-area: header;
 	text-align: center;
 	font-size: 70px;
-	margin-left: 200px;
+	margin-left: -10px;
 	height: 220px;
 	background-image: url(imagenes/header.jpg);
 	background-attachment: fixed;
@@ -90,6 +43,7 @@ h1{
 	stroke: #3b6935;
 	text-shadow: 6px  6px 6px #132510;
 	display: contents;
+	letter-spacing: 2p;
 	background-image: url(header.jpg) initial;
 	text-shadow: 60px 60px 60px 60px rgb(255, 255, 255);
 	position: fixed;
@@ -101,8 +55,8 @@ h1{
 .article {
 	grid-area: article;
 	margin-top: 200px;
-	margin-left: 280px;
 	margin-right: 20px;
+	margin-left: 50px;
 	text-indent: 45px;
 	font-size: 25px;
 	font-family: 'Merriweather', serif;
@@ -136,7 +90,7 @@ h1{
 .ofertas{
 	grid-area: ofertas;
 	display: inline;
-	margin-left: 250px;
+	margin-left: 100px;
 }
 .card{
 	width: 315px;
@@ -153,7 +107,7 @@ h1{
 #ofertas-title{
 	text-align: center;
 	margin-top: -50px;
-	margin-left: -100px;
+	margin-left: -160px;
 }
 .card img{
 	width: 250px;
@@ -219,10 +173,9 @@ h1{
 
 .footer {
 	grid-area: footer;
-	padding-left: 60px;
-	margin-left: 200px;
+	margin-top: -30px;
 	margin-bottom: -30px;
-	height: 40px;
+	height: 20px;
 	text-align: center;
 	color: rgb(104, 104, 104);
 }
