@@ -2,7 +2,7 @@
 	display: inline-block;
 	width:30px;
 	height: 20px;
-    margin: 10px;
+    margin: 15px;
 	margin-bottom: 0px;
 	margin-right: 0px;
 	position: fixed;
@@ -32,7 +32,7 @@ nav{
 	top: 0;
 	bottom: 0;
 	left:-300px;
-	width: 300px;
+	width: 250px;
 	z-index: 1;
 	opacity: 0;
 	transition: all 0.75s ease;
@@ -40,13 +40,13 @@ nav{
 	grid-area: nav;
 	position: fixed;
 	background: black;
-	padding-right: 20px;
+	padding-right: 10px;
 	padding-left: 5px;
 	padding-bottom: 200%;
 	font-family: 'Merriweather', serif;
 	
 	margin-right: 5px;
-	font-size: 28px;
+	font-size: 20px;
 	overflow: initial;
 }
 nav a{
@@ -55,8 +55,8 @@ nav a{
 	list-style-type: none !important;
 	color: white;
 	padding: 5px;
-	padding-right: 10px;
-	padding-left: 5px;
+	padding-right: 3px;
+	padding-left: 2px;
 	text-align: center;
 	transition: all ease 0.25s;
 }
@@ -67,9 +67,9 @@ nav a:hover{
 	border-bottom: solid #5BA152;
 }
 nav #logo{
-	width: 220px;
-	height: 220px;
-	margin-left: 23%;
+	width: 170px;
+	height: 170px;
+	margin-left: 25%;
 	margin-top: 20px;
 	position: relative;
 	right: 25px;
@@ -79,7 +79,7 @@ ul{
 }
 li{
 	list-style: none;
-	padding: 10px;
+	padding: 6px;
 }
 
 
