@@ -2,7 +2,9 @@
 	display: inline-block;
 	width:30px;
 	height: 20px;
-    margin: 20px;
+    margin: 10px;
+	margin-bottom: 0px;
+	margin-right: 0px;
 	position: fixed;
 	z-index: 2;
 }
@@ -23,7 +25,7 @@
 }
  
 #menu_on span:nth-child(3){
-bottom: 0;
+	bottom: 0;
 }
 nav{
 	position: fixed;
@@ -42,8 +44,9 @@ nav{
 	padding-left: 5px;
 	padding-bottom: 200%;
 	font-family: 'Merriweather', serif;
+	
 	margin-right: 5px;
-	font-size: 20px;
+	font-size: 28px;
 	overflow: initial;
 }
 nav a{
@@ -64,10 +67,12 @@ nav a:hover{
 	border-bottom: solid #5BA152;
 }
 nav #logo{
-	width: 160px;
-	height: 160px;
+	width: 220px;
+	height: 220px;
 	margin-left: 23%;
 	margin-top: 20px;
+	position: relative;
+	right: 25px;
 }
 ul{
 	padding-left: 5px;

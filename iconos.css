@@ -1,10 +1,11 @@
 .accesos{
 	margin-left: 30%;
-    margin-top: -15px;
+    margin-top: 15px;
 }
 .icono{
 	float: left;
 	margin: 15px;
+    width: 40px;
 }
 #wpp{
     position: fixed;

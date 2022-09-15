@@ -1,96 +1,100 @@
-/*
-font-family: 'DM Serif Display', serif;
-font-family: 'Merriweather', serif;
-font-family: 'Padauk', sans-serif;
-font-family: 'Unna', serif;
-*/
+
+/*!font-family: 'DM Serif Display', serif;
+/*!font-family: 'Merriweather', serif;
+/*!font-family: 'Padauk', sans-serif;
+/*!font-family: 'Unna', serif;*/
+
 
 
 .body{
 	margin: 0px;
 	background-color: rgb(20, 20, 20);
+	width: 100%;
 }
 .main{
-	/*GRID*/
+	/**GRID*/
 	display: grid;
 	grid-gap: 1rem;
 	grid-template-areas:
 		"header header header"
-		"article article aside"
+		"article article article"
 		"ofertas ofertas ofertas"
 		"footer footer footer";
 	grid-template-columns: 15% auto;
 	grid-template-rows: 1%;
 	
-	/* ESTILOS DE PAGINA*/
+	/** ESTILOS DE PAGINA*/
 	color: white;
 }
-/* HEADER */
+
+/*? HEADER */
 
 .header {
+
 	grid-area: header;
-	text-align: center;
-	font-size: 70px;
-	margin-left: -10px;
-	height: 220px;
+	font-size: 45px;
+	height: 160px;
+	padding-left: 9%;
+	padding-top: 3%;
 	background-image: url(imagenes/header.jpg);
 	background-attachment: fixed;
 	
 }
 h1{
+
 	font-family: 'DM Serif Display', serif;
 	color: #5BA152;
 	stroke: #3b6935;
 	text-shadow: 6px  6px 6px #132510;
 	display: contents;
 	letter-spacing: 2p;
-	background-image: url(header.jpg) initial;
 	text-shadow: 60px 60px 60px 60px rgb(255, 255, 255);
 	position: fixed;
+
 }
 
 
-/* CONTENIDO */
+/*? CONTENIDO */
 
 .article {
 	grid-area: article;
-	margin-top: 200px;
-	margin-right: 20px;
-	margin-left: 50px;
-	text-indent: 45px;
+	padding-top: 120px;
+	margin: 30px;
+	text-indent: 10px;
 	font-size: 25px;
 	font-family: 'Merriweather', serif;
 	text-align: center;
 }
 .subtitle {
-	font-size: 65px;
-	margin: 30px;
+	font-size: 50px;
+	margin: 5px;
 	color: #df9d23 ;
 	font-family: 'DM Serif Display', serif;
 
 }
-/* PUBLICIDAD */
-
+/*? PUBLICIDAD */
+/* 
 .aside {
 	grid-area: aside;
 	color: black;
 	margin-right:25px;
 	margin-left: 10px;
 	margin-top: 370px;
+	opacity: 0;
 }
 .aside img{
 	width: 150px;
 	position: -webkit-sticky;
 	position: sticky;
 	top: 120px;
-}
+} */
 
 
-/* OFERTAS */
+/*? OFERTAS */
 .ofertas{
 	grid-area: ofertas;
 	display: inline;
-	margin-left: 100px;
+
 }
 .card{
 	width: 315px;
@@ -100,6 +104,7 @@ h1{
 	color: white;
 	float: left;
 	margin: 20px;
+	margin-left: 17%;
 	border-radius: 15px;
 	text-align: center;
 	border: none;
@@ -107,7 +112,7 @@ h1{
 #ofertas-title{
 	text-align: center;
 	margin-top: -50px;
-	margin-left: -160px;
+
 }
 .card img{
 	width: 250px;
@@ -169,7 +174,7 @@ h1{
 	color: rgb(32, 59, 31);
 	background-color: #df9d23 ;
 }
-/* FOOTER */
+/*? FOOTER */
 
 .footer {
 	grid-area: footer;
@@ -180,10 +185,11 @@ h1{
 	color: rgb(104, 104, 104);
 }
 
-
-@media (max-weight: 600px){
-	.nav{
-		display: flex;
-		position: hidden;
+/*
+@media screen and (max-weight: 800px){
+	h1{
+		font-size: 5px;
+		margin-left: 10px;
 	}
 }
+*/
