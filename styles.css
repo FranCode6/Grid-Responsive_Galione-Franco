@@ -1,4 +1,3 @@
-
 /*!font-family: 'DM Serif Display', serif;
 /*!font-family: 'Merriweather', serif;
 /*!font-family: 'Padauk', sans-serif;
@@ -6,74 +5,113 @@
 
 
 
-.body{
+.body {
 	margin: 0px;
+	margin-right: -20px;
 	background-color: rgb(20, 20, 20);
 	width: 100%;
+	overflow-y: auto;
+	scrollbar-color: rgba(255, 0, 0, 0.5) rgba(0, 0, 0, 0);
+	scrollbar-width: thin;
 }
-.main{
+
+.body::-webkit-scrollbar {
+	-webkit-appearance: none;
+}
+
+.body::-webkit-scrollbar:vertical {
+	width: 10px;
+}
+
+.body::-webkit-scrollbar-button:increment,
+.body::-webkit-scrollbar-button {
+	display: none;
+}
+
+.body::-webkit-scrollbar:horizontal {
+	height: 10px;
+}
+
+.body::-webkit-scrollbar-thumb {
+	background-color: #203a1d;
+	border-radius: 20px;
+	border: 2px solid #415f3d;
+}
+
+.body::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+
+.main {
 	/**GRID*/
 	display: grid;
 	grid-gap: 1rem;
 	grid-template-areas:
-		"header header header"
-		"article article article"
-		"ofertas ofertas ofertas"
-		"footer footer footer";
-	grid-template-columns: 15% auto;
+		"header"
+		"article"
+		"ofertas"
+		"footer";
+	grid-template-columns: 100% auto;
 	grid-template-rows: 1%;
-	
+
 	/** ESTILOS DE PAGINA*/
 	color: white;
+}
+
+/*? NAVEGADOR  */
+div.modal-backdrop.fade.show {
+	--bs-backdrop-zindex: none;
+	--bs-backdrop-bg: transparent;
+	--bs-backdrop-opacity: 0;
 }
 
 /*? HEADER */
 
 .header {
-
 	grid-area: header;
-	font-size: 45px;
-	height: 160px;
-	padding-left: 9%;
+	height: 260%;
 	padding-top: 3%;
 	background-image: url(imagenes/header.jpg);
 	background-attachment: fixed;
-	
-}
-h1{
+	text-align: center;
 
+}
+
+#titulo {
 	font-family: 'DM Serif Display', serif;
 	color: #5BA152;
 	stroke: #3b6935;
-	text-shadow: 6px  6px 6px #132510;
+	text-shadow: 6px 6px 6px #132510;
 	display: contents;
 	letter-spacing: 2p;
 	text-shadow: 60px 60px 60px 60px rgb(255, 255, 255);
 	position: fixed;
-
 }
-
 
 /*? CONTENIDO */
 
 .article {
 	grid-area: article;
+	height: 90%;
 	padding-top: 120px;
 	margin: 30px;
+	margin-bottom: 0px;
 	text-indent: 10px;
 	font-size: 25px;
 	font-family: 'Merriweather', serif;
 	text-align: center;
 }
+
 .subtitle {
 	font-size: 50px;
 	margin: 5px;
-	color: #df9d23 ;
+	color: #df9d23;
 	font-family: 'DM Serif Display', serif;
 
 }
+
 /*? PUBLICIDAD */
-#publicidad-mobile{
+#publicidad-mobile {
 	height: 120px;
 	position: fixed;
 	margin-bottom: 15px;
@@ -83,12 +121,13 @@ h1{
 
 
 /*? OFERTAS */
-.ofertas{
+div.ofertas {
 	grid-area: ofertas;
 	display: inline;
-
+	align-items: center;
 }
-.card{
+
+div.card {
 	width: 315px;
 	height: auto;
 	background-color: rgb(32, 59, 31);
@@ -96,64 +135,80 @@ h1{
 	color: white;
 	float: left;
 	margin: 20px;
-	margin-left: 17%;
+	margin-left: 7%;
 	text-align: center;
 	padding-bottom: 40px;
 	border: none;
 }
-#ofertas-title{
-	text-align: center;
-	margin-top: -50px;
-
+.detalle{
+	margin-bottom: -15px;
 }
-.card img{
+div.card:hover {
+	transform: scale(1.05);
+}
+
+#ofertas-title {
+	text-align: center;
+	margin-left: -20px;
+}
+
+div.card img {
 	width: 250px;
 	border-radius: 15px;
 	margin: 28px;
 	margin-top: 30px;
 }
-.card .upper-p{
+
+.card p.upper-p {
 	font-size: 70px;
 }
-.upper-p, .lower-p{
+
+p.upper-p,
+p.lower-p {
 	font-family: 'DM Serif Display', serif;
 	font-size: 34px;
 	margin-top: -30px;
 	margin-bottom: -5px;
-	color: #df9d23 ;
+	color: #df9d23;
 	font-weight: bold;
 	letter-spacing: 1px;
 }
-.card li{
+
+div.card li {
 	margin-right: 10px;
 	font-family: 'DM Serif Display', serif;
 	font-size: 20px;
 }
-.card div{
+
+div.card div {
 	position: relative;
 	float: bottom;
 	margin-top: 20px;
-	margin-right:  40px;
+	margin-right: 40px;
 }
-.compra{
-	background-color: transparent ;
+
+button.compra {
+	background-color: transparent;
 	border: none;
 	margin: -20px;
 }
-details{
+
+details {
 	margin-top: 20px;
 	margin-bottom: 10px;
 	font-family: 'DM Serif Display', serif;
 	font-size: 20px;
 }
-.compra p{
+
+button.compra p {
 	font-family: 'Unna', serif;
 	font-size: 70px;
-	color: #df9d23 ;
+	color: #df9d23;
 	font-weight: bold;
 	letter-spacing: 1px;
 }
-.precio{
+
+p.precio {
 	float: center;
 	font-family: 'Unna', serif;
 	margin-top: 30px;
@@ -162,15 +217,22 @@ details{
 	padding-left: 0px;
 	padding-right: 5px;
 	font-size: 70px;
-	color: #df9d23 ;
+	color: #df9d23;
 	font-weight: bold;
 	letter-spacing: 1px;
 }
-.precio:hover{
-	margin-top: 30px;
+
+p.precio:hover {
 	color: rgb(32, 59, 31);
-	background-color: #df9d23 ;
+	background-color: #df9d23;
+	padding: -14px;
+
 }
+
+p.precio:active {
+	transform: scale(0.95);
+}
+
 /*? FOOTER */
 
 .footer {
@@ -182,11 +244,43 @@ details{
 	color: rgb(104, 104, 104);
 }
 
-/*
-@media screen and (max-weight: 800px){
-	h1{
-		font-size: 5px;
-		margin-left: 10px;
+@media screen and (min-width: 800px) {
+	.body {
+		overflow-y: auto;
 	}
+
+	.main {
+		grid-gap: 1rem;
+		grid-template-areas:
+			"header header header"
+			"article article article"
+			"ofertas ofertas ofertas"
+			"footer footer footer";
+		grid-template-columns: 15% auto;
+		grid-template-rows: 1%;
+	}
+
+	.header {
+		font-size: 150px;
+		margin-top: -30px;
+		padding-top: 0px;
+		text-align: center;
+		height: 250px;
+		padding-bottom: 40px;
+	}
+
+	.article {
+		margin-top: 70px;
+		margin-left: 90px;
+		margin-right: 90px;
+	}
+
+	#ofertas-title {
+		margin-left: -100px;
+	}
+
+	.card {
+		margin-left: 7%;
+	}
+
 }
-*/

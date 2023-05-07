@@ -14,11 +14,11 @@
     <!-- BOTON HAMBURGUESA -->
     <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous">
-    </script>
-    
+        </script>
+
     <script type="text/javascript">
-        $( document ).ready(function() {
-            $('#menu_on').click(function(){
+        $(document).ready(function () {
+            $('#menu_on').click(function () {
                 $('body').toggleClass('visible_menu');
             })
         });
@@ -28,7 +28,14 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Merriweather:wght@300&family=Padauk:wght@700&family=Unna&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Merriweather:wght@300&family=Padauk:wght@700&family=Unna&display=swap"
+        rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/29bf2180d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/styles.css">
 
 </head>
 
@@ -40,33 +47,69 @@
                 <span></span>
                 <span></span>
             </a>
-            </header>
-            <nav>	
-                <div>
-                    <img id="logo" src="imagenes/mate-de-coca.png" alt="Logo mateate">
+        </header>
+        <nav>
+            <div>
+                <img id="logo" src="imagenes/mate-de-coca.png" alt="Logo mateate">
+            </div>
+            <div>
+                <ul class="navegador-ul">
+                    <li class="navegador_link"><a href="#mateate">MATEATE</a></li>
+                    <li class="navegador_link"><a a href="#quienes-somos">¿Quiénes somos?</a></li>
+                    <li class="navegador_link"><a href="#mates">Mates</a></li>
+                    <li class="navegador_link"><a href="#termos">Termos</a></li>
+                    <li class="navegador_link"><a href="#metodos-de-pago">Metodos de Pago</a></li>
+                    <li class="navegador_link"><a href="#ofertas-title">OFERTAS</a></li>
+                </ul>
+            </div>
+            <div class="accesos">
+                <img class="icono" id="wpp" src="imagenes/whatsapp.png" alt="contacto">
+                <img class="icono" id="wpp-hover" src="imagenes/whatsapp-hover.png" alt="contacto">
+                <!-- CARRITO -->
+                <img class="icono" id="carro" src="imagenes/carrito-de-compras.png" alt="carrito">
+                <img type="button" class="icono" id="carro-hover" src="imagenes/carrito-de-compras-hover.png"
+                    alt="carrito" data-bs-toggle="modal" data-bs-target="#profileModal">
+                <div class="modal modal-l text-light fade" id="profileModal" tabindex="-1"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog ">
+                        <div class="modal-content bg-dark ">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-light">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Item</th>
+                                            <th scope="col">Cantidad</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="items"></tbody>
+                                    <tfoot>
+                                        <tr id="footer">
+                                            <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+
+                                <button type="button" class="btn btn-success">Pagar</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <ul class="navegador-ul">
-                        <li class="navegador_link"><a href="#mateate">MATEATE</a></li>
-                        <li class="navegador_link"><a a href="#quienes-somos">¿Quiénes somos?</a></li>
-                        <li class="navegador_link"><a href="#mates">Mates</a></li>
-                        <li class="navegador_link"><a href="#termos">Termos</a></li>
-                        <li class="navegador_link"><a href="#metodos-de-pago">Metodos de Pago</a></li>
-                        <li class="navegador_link"><a href="#ofertas-title">OFERTAS</a></li>
-                    </ul>
-                </div>
-                <div class="accesos">
-                    <img class="icono" id="wpp" src="imagenes/whatsapp.png" alt="contacto">
-                    <img class="icono" id="wpp-hover" src="imagenes/whatsapp-hover.png" alt="contacto">
-                    <img class="icono" id="carro" src="imagenes/carrito-de-compras.png" alt="carrito">
-                    <img class="icono" id="carro-hover" src="imagenes/carrito-de-compras-hover.png" alt="carrito">
-                </div>
-            </nav>
+            </div>
+        </nav>
     </div>
     <div class="main">
-        <header class="header" id="mateate">
-            <h1>MATEATE</h1>
-        </header>
+        <div  class="header" id="mateate">
+            <p id="titulo">MATEATE</p>
+        </div>
+
         <article class="article">
             <p class="subtitle" id="quienes-somos">¿Quiénes somos?</p>
             <p>Somos una pequeña empresa que tiene como objetivo que cada argentino tengo un mate y un termo que lo
@@ -124,9 +167,9 @@
                     <li>◈ Instructivo (¿Como curar el mate? ¿Qué hacer con la yerba usada?)</li>
                     <li>◈ Packaging que podés usar de yerbero chico o azucarera</li>
                 </details>
-                <button class="compra">
+                <buttont class="compra">
                     <p class="precio">$1200</p>
-                </button>
+                </buttont>
             </div>
             <div class="card">
                 <img src="imagenes/termo.png" alt="combo producto">
@@ -138,9 +181,9 @@
                     <li>◈ Instructivo (¿Qué hacer con la yerba usada?)</li>
                     <li>◈ Packaging que podés usar de yerbero grande</li>
                 </details>
-                <button class="compra">
+                <buttont class="compra">
                     <p class="precio">$6000</p>
-                    </butt>
+                </buttont>
             </div>
             <div class="card">
                 <img src="imagenes/equipo-de-mate.png" alt="combo producto">
@@ -152,18 +195,22 @@
                     <li>◈ Instructivo y packaging reutilizables</li>
                     <li>◈ Guarda mate y termo de cartón duro reciclado forrado con tela arpillera</li>
                 </details>
-                <button class="compra">
+                <buttont class="compra">
                     <p class="precio">$8500</p>
-                </button>
+                </buttont>
             </div>
-        
+
         </div>
-        <img id="publicidad-mobile" src="imagenes/publicidad-mobile.jpg" alt="publicidad yerba mañanita">
+
         <footer class="footer">
             <p>Copyright © 2022 <FranCode>. Todos los derechos reservados.</p>
         </footer>
     </div>
 
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

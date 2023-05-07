@@ -60,7 +60,9 @@ nav a{
 	text-align: center;
 	transition: all ease 0.25s;
 }
- 
+th{
+	color: white;
+}
 nav a:hover{
 	background: rgb(14, 14, 14);
 	color: white;
